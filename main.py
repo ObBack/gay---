@@ -11,15 +11,15 @@ class Gay(QMainWindow):
         self.setFixedSize(480, 300)
         self.setWindowIcon(QIcon("./icon.ico"))
 
-        ver = "v_1.0.2"
+        self.ver = "v_1.0.2"
 
         self.examine_button = self.findChild(QPushButton, 'examine')
         self.user_like_combobox = self.findChild(QComboBox, 'user_like')
         self.user_gender_combobox = self.findChild(QComboBox, 'user_gender')
         self.ver_label = self.findChild(QLabel, 'ver')
-        # 为按钮的点击事件绑定槽函数
+        
         self.examine_button.clicked.connect(self.check_combobox)
-        self.ver_label.setText(ver)
+        self.ver_label.setText(self.ver)
 
     def check_combobox(self):
         # 获取下拉框当前选中的文本

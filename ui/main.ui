@@ -10,6 +10,13 @@
     <height>300</height>
    </rect>
   </property>
+  <property name="font">
+   <font>
+    <family>等线</family>
+    <pointsize>10</pointsize>
+    <bold>true</bold>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>Gay鉴别器</string>
   </property>
@@ -26,12 +33,6 @@
     <layout class="QHBoxLayout" name="horizontalLayout_2">
      <item>
       <widget class="QLabel" name="label">
-       <property name="font">
-        <font>
-         <family>汉仪润圆</family>
-         <pointsize>11</pointsize>
-        </font>
-       </property>
        <property name="text">
         <string> 您是女人还是男人？</string>
        </property>
@@ -92,12 +93,6 @@
      </item>
      <item>
       <widget class="QPushButton" name="examine">
-       <property name="font">
-        <font>
-         <family>汉仪润圆</family>
-         <pointsize>11</pointsize>
-        </font>
-       </property>
        <property name="text">
         <string>检测</string>
        </property>
@@ -177,12 +172,6 @@
     <layout class="QHBoxLayout" name="horizontalLayout_7">
      <item>
       <widget class="QLabel" name="label_3">
-       <property name="font">
-        <font>
-         <family>汉仪润圆</family>
-         <pointsize>11</pointsize>
-        </font>
-       </property>
        <property name="text">
         <string> 您喜欢女人还是男人？</string>
        </property>

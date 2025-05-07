@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+# @Time    : 2025/5/7 12:20
+# @File    : main.py
+# @Author  : obback explore
+# @Email   : 1989397949@qq.com
+
 from PySide6.QtWidgets import (QApplication, QMainWindow, QMessageBox, QPushButton, QComboBox, QLabel)
 from PySide6.QtGui import QIcon
 from PySide6.QtUiTools import QUiLoader
@@ -10,14 +16,14 @@ class Gay(QMainWindow):
         self.setCentralWidget(self.ui)
         self.setFixedSize(480, 300)
         self.setWindowIcon(QIcon("./icon.ico"))
-
+        
         self.ver = "v_1.0.2"
 
         self.examine_button = self.findChild(QPushButton, 'examine')
         self.user_like_combobox = self.findChild(QComboBox, 'user_like')
         self.user_gender_combobox = self.findChild(QComboBox, 'user_gender')
         self.ver_label = self.findChild(QLabel, 'ver')
-        
+
         self.examine_button.clicked.connect(self.check_combobox)
         self.ver_label.setText(self.ver)
 
